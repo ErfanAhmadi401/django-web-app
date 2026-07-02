@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 
-def home(request):
-    return render(request, "core/home.html")
+def index(request):
+    return render(request, "core/index.html")
 
 
 def contact(request):
@@ -11,7 +11,3 @@ def contact(request):
 
 def about(request):
     return render(request, "core/about.html")
-
-
-def test(request):
-    return render(request, "core/test.html")
