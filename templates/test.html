@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} {{posts}}
+    <br>
+
+    {% for post in posts %}
+        {% if post.status == 0 %}
+            <p>Not Published Yet</p>
+        {% else %}
+            <h1>{{post}}</h1>
+            <h2>{{post.title}}</h2>
+            <p>{{post.content}}</p>
+            <small>{{post.published_at}}</small>
+            <br>
+        {% endif %}
+    {% endfor %}
+
+    <table>
+        {% for post in posts %}
+            {% if post.status == 0 %}
+                <tr>
+                    <td>
+                        Not Published Yet
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td>
+                        {{post}}
+                    </td>
+                        
+                    <td>
+                        {{post.title}}
+                    </td>
+
+                    <td>
+                        {{post.content}}
+                    </td>
+
+                    <td>
+                        {{post.published_at}}
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table> {% endcomment %}
+
+    <table>
+        {% for post in posts %}
+            {% if post.status == 0 %}
+                <tr>
+                    <td>
+                        Not Published Yet
+                    </td>
+                </tr>
+            {% else %}
+                <thead>
+                    <tr>
+                        <th>
+                            {{post}}
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            {{post.title}}
+                        </td>
+
+                        <td>
+                            {{post.content}}
+                        </td>
+
+                        <td>
+                            {{post.published_at}}
+                        </td>
+                    </tr>
+                </tbody>
+            {% endif %}
+        {% endfor %}
+    </table>
+
+{% comment %} 
+    <table>
+        <thead>
+            <tr>
+                <th>عنوان</th>
+                <th>محتوا</th>
+                <th>تاریخ انتشار</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in posts %}
+                {% if post.status == 0 %}
+                    <tr>
+                        <td colspan="3">Not Published Yet</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td>{{ post.title }}</td>
+                        <td>{{ post.content }}</td>
+                        <td>{{ post.published_at }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table> {% endcomment %}
+
+</body>
+</html>
