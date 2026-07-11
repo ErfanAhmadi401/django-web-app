@@ -1,5 +1,13 @@
 # 🚀 Django Web App
 
+![Python](https://img.shields.io/badge/python-3.12-blue?logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/django-5.2-green?logo=django&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-3-blue?logo=sqlite&logoColor=white)
+![GitHub repo size](https://img.shields.io/github/repo-size/ErfanAhmadi401/django-web-app)
+![GitHub last commit](https://img.shields.io/github/last-commit/ErfanAhmadi401/django-web-app)
+![License](https://img.shields.io/badge/license-MIT-orange)
+<!-- ![GitHub stars](https://img.shields.io/github/stars/ErfanAhmadi401/django-web-app?style=social) -->
+
 A personal Django project built to learn **backend development**, **database design**, and **web application architecture** using modern Django development practices.
 
 The project is being developed step by step, following software engineering principles such as clean architecture, database normalization, and scalable design.
@@ -21,13 +29,10 @@ The project is being developed step by step, following software engineering prin
 
 # 🛠️ Tech Stack
 
-* Python
-* Django
-* SQLite
-* HTML5
-* CSS3
-* Git
-* GitHub
+- **Backend:** Python 3.12, Django 5.2
+- **Database:** SQLite
+- **Frontend:** HTML5, CSS3
+- **Tools:** Git, GitHub, Virtual Environment
 
 ---
 
