@@ -13,3 +13,13 @@ def blog_home(request):
 
 def blog_single(request):
     return render(request, "blog/blog-single.html")
+
+
+def test(request, first_name, last_name, age):
+    context = {
+        "first_name": first_name,
+        "last_name": last_name,
+        "age": age,
+        
+    }
+    return render(request, "test.html", context)
