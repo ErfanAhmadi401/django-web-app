@@ -50,3 +50,6 @@ staticfiles/
 build/
 dist/
 *.egg-info/
+
+#Temp
+diff.diff
