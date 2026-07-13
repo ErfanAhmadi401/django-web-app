@@ -11,16 +11,21 @@ def blog_home(request):
     return render(request, "blog/blog-home.html", context)
 
 
-def blog_single(request):
-    return render(request, "blog/blog-single.html")
-
-
-def test(request, pid):
-    # post = Post.objects.get(id=pid)
+def blog_single(request, pid):
     post = get_object_or_404(Post, id=pid)
     context = {
-        "pid": post.id,
         "post": post,
         
     }
-    return render(request, "test.html", context)
+    return render(request, "blog/blog-single.html", context)
+
+
+# def test(request, pid):
+#     # post = Post.objects.get(id=pid)
+#     post = get_object_or_404(Post, id=pid)
+#     context = {
+#         "pid": post.id,
+#         "post": post,
+        
+#     }
+#     return render(request, "test.html", context)
