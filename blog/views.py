@@ -12,7 +12,8 @@ def blog_home(request):
 
 
 def blog_single(request, pid):
-    post = get_object_or_404(Post, id=pid, status=1)
+    posts = Post.objects.all().filter(status=1)
+    post = get_object_or_404(posts, id=pid)
     context = {
         "post": post,
         
