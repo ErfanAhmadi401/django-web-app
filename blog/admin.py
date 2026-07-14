@@ -25,6 +25,7 @@ class PostAdmin(admin.ModelAdmin):
 
     list_display = [
         "title",
+        "author",
         "view_count",
         "status",
         "published_at",
@@ -33,15 +34,14 @@ class PostAdmin(admin.ModelAdmin):
 
     list_filter = [
         "status",
+        "author",
 
     ]
 
-    """
     ordering = [
         "-created_at",
 
     ]
-    """
 
     search_fields = [
         "title",
