@@ -2,3 +2,4 @@ Python==3.12.13
 Django==5.2.15
 asgiref==3.11.1
 sqlparse==0.5.5
+pillow==12.3.0
