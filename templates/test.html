@@ -11,11 +11,23 @@
         Testing Page
     </h1>
     <p>
-        test: {% function 2 %}
+        test: {% totalposts %}
+    </p>
+    {% comment %} <p>
+        {% totalposts as tp %}{{tp}}
+    </p> {% endcomment %}
+    {% comment %} <p>
+        {% for post in posts %}
+            {{post}}
+        {% endfor %}
+    </p> {% endcomment %}
+    <p>
+        test2: {% posts as ps %}
         <br><br>
-        test2: {% plus 2 %}
-        <br><br>
-        test3: {% default %}
+        {% for post in ps %}
+            {{post}}
+            <br><br>
+        {% endfor %}
     </p>
 </body>
 </html>
