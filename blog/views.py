@@ -20,3 +20,7 @@ def blog_single(request, pid):
     }
     return render(request, "blog/blog-single.html", context)
 
+
+def test(request):
+    return render(request, "test.html")
+

@@ -1,3 +1,4 @@
+{% load blog_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>
+        Testing Page
+    </h1>
     <p>
-        {{pid}} <br> {{post.title}}
+        test: {% function 2 %}
+        <br><br>
+        test2: {% plus 2 %}
+        <br><br>
+        test3: {% default %}
     </p>
 </body>
 </html>
